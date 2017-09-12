@@ -6,7 +6,13 @@
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-    <ui-view></ui-view>
+
+    <div class = "sideBar">
+      <ui-view></ui-view>
+
+    </div>
+    
+
 
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -25,6 +31,7 @@
         apiKey: "AIzaSyBmibFC3BEUWuJr4OLvThR0CAc3PgMGd40",
         authDomain: "bloc-chat-a852e.firebaseapp.com",
         databaseURL: "https://bloc-chat-a852e.firebaseio.com",
+        projectId: "bloc-chat-a852e",
         storageBucket: "bloc-chat-a852e.appspot.com",
         messagingSenderId: "792967069025"
       };
@@ -32,6 +39,9 @@
     </script>
     <!-- Application Files -->
     <script src="/scripts/app.js"></script>
+    <script src="/scripts/services/Room.js"></script>
+
+
     <script src="/scripts/controllers/HomeCtrls.js"></script>
 
 </body>
