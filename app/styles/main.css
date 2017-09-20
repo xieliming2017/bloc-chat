@@ -2,3 +2,32 @@
   background-color: rgba(181, 181, 181,0.5);
   padding-bottom: 100%;
 }
+
+.roomName {
+  font-size: 1.5rem;
+  color: rgb(107, 107, 107);
+  padding: 0.7rem;
+}
+
+.sent-time{
+  position: absolute;
+  right: 2rem;
+  height: 100%;
+  color: rgb(107, 107, 107);
+}
+
+.message-body: hover{
+  background-color: rgb(181, 181, 181);
+}
+
+h3 {
+  padding-bottom: 2rem;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.chat-list {
+  padding-left: 2rem;
+}
