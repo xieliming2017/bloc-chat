@@ -17,20 +17,48 @@
 
     <div class="col-sm-9 chat-list">
         <h3 class="chat-list-title">{{home.activatedRoom}}</h3>
-        <div class="message-body" ng-repeat="message in home.activatedMessage">
-          <h4>{{message.username}}</h4>
-          <div class="message-content">
-            {{message.content}}
+
+        <div class="row" ng-repeat="message in home.activatedMessage">
+          <div class="col-sm-10">
+            <div class="row">
+              <div class="col-sm-12">
+                <h4>{{message.username}}</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                {{message.content}}
+              </div>
+            </div>
           </div>
-          <div class="sent-time">
+          <div class="col-sm-2">
             {{message.sentAt}}
           </div>
         </div>
+
+        <div class="row footer" ng-show="home.activatedRoom">
+
+          <div class="col-sm-12 ">
+            <div class="row">
+              <div class="col-sm-10 ">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <input placeholder="Write your message here..." ng-model="input"/>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2 ">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <button id="send-button" ng-disabled="!input" ng-click="home.send(input)">send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
     </div>
   </div>
-  <div class="row">
-
-  </div>
-
-  </div
 </div>

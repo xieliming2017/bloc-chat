@@ -40,6 +40,11 @@
         $ctrl.activatedMessage = Message.activatedMsg;
 
       }
+
+      $ctrl.send = function(message){
+        Message.send(message, $ctrl.activatedRoomKey);
+        $scope.input = "";
+      }
     }
 
     angular
